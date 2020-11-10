@@ -1,2 +1,2 @@
 # face-mask-detection
-Untuk mendeteksi penggunaan masker sebagai bentuk pencegahan Covid-19
+Deteksi penggunaan masker sebagai bentuk pencegahan Covid-19
