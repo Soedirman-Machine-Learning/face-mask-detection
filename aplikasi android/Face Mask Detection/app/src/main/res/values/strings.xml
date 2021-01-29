@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name" translation_description="Object Detection demo app [CHAR_LIMIT=40]">Deteksi Masker Muka</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string name="about_app">Aplikasi Deteksi Masker Muka dibangun dengan menggunakan Teknik Deep Learning. Tujuannya untuk membantu deteksi pemakaian masker muka sehingga dapat mencegah penyebaran Covid-19. Disusun oleh Muhammad Fakhrurrozi Sutisna (H1A017091) untuk menyelesaikan penelitian Tugas Akhir.</string>
+    <string name="APP_NAME">DETEKSI MASKER MUKA</string>
+    <string name="deep_learning">DEEP LEARNING</string>
+    <string name="tentang">Tentang</string>
+    <string name="deteksi">Deteksi</string>
+    <string name="deskripsi_logo_app">Logo Aplikasi</string>
+    <string name="tentang_covid">Tentang Covid</string>
+    <string name="open">Open</string>
+    <string name="frame">Frame</string>
+    <string name="_640_480">640*480</string>
+    <string name="crop">Crop</string>
+    <string name="inference_time">Inference Time</string>
+    <string name="threads">Threads</string>
+    <string name="minus">minus</string>
+    <string name="_1">1</string>
+    <string name="plus">plus</string>
+    <string name="api">API</string>
+    <string name="tflite">TFLITE</string>
+    <string name="toolbar">toolbar</string>
+    <string name="button">button</string>
+</resources>

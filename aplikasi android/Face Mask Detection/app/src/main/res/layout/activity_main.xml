@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_primary"
+            android:text="@string/APP_NAME"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/color_primary"
+            android:text="@string/deep_learning"
+            android:textSize="20sp"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="@string/deskripsi_logo_app" />
+
+        <Button
+            android:id="@+id/btn_deteksi"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/deteksi"
+            android:textColor="@color/color_primary"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btn_tentang"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/tentang"
+            android:textColor="@color/color_primary"
+            android:layout_marginBottom="5dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
