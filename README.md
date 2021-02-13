@@ -46,11 +46,12 @@ Pengujian dilakukan pada dua media yaitu pada infrastruktur <i>Google Colaborato
 ## Penggunaan Aplikasi Android
 ### Menggunakan Kamera
 1. Download aplikasinya di dalam folder Output pada repositori ini. Pada halaman : https://github.com/Soedirman-Machine-Learning/face-mask-detection/blob/main/aplikasi%20android/Face%20Mask%20Detection/apk/Deteksi-Masker-Muka-DL.apk
-2. Buka Aplikasi Deteksi Masker Muka kemudian pilih menu "DETEKSI".
-3. Deteksi dapat menggunakan kamera depan dan kamera belakang.
-3. Setelah terbuka menu deteksi arahkan kamera ke obyek wajah yang akan dideteksi (jarak kamera dengan obyek dapat mencapai 150 cm).
-4. Hasil prediksi dan label akan muncul secara <i>real-time</i> dalam persentase (% diurutkan dari yang tertinggi). Persentase tertinggi merupakan hasil prediksi yang paling mendekati/mirip.
-5. Waktu <i>inference time</i> pada setiap ponsel dapat berbeda. Pada ponsel Mi A1, <i>inference time</i> terbaik yaitu pada 110 ms sehingga dapat dikatakan bahwa hasil prediksi akurat.
+2. Berikan izin kamera untuk aplikasi ini.
+3. Buka Aplikasi Deteksi Masker Muka kemudian pilih menu "DETEKSI".
+4. Deteksi dapat menggunakan kamera depan dan kamera belakang.
+5. Setelah terbuka menu deteksi arahkan kamera ke obyek wajah yang akan dideteksi (jarak kamera dengan obyek dapat mencapai 150 cm).
+6. Hasil prediksi dan label akan muncul secara <i>real-time</i> dalam persentase (% diurutkan dari yang tertinggi). Persentase tertinggi merupakan hasil prediksi yang paling mendekati/mirip.
+7. Waktu <i>inference time</i> pada setiap ponsel dapat berbeda. Pada ponsel Mi A1, <i>inference time</i> terbaik yaitu pada 110 ms sehingga dapat dikatakan bahwa hasil prediksi akurat.
 
 ### Informasi Aplikasi
 1. Buka Aplikasi
