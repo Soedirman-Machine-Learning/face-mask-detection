@@ -1,6 +1,6 @@
 # <i>Face Mask Detection</i> (Deteksi Masker Muka)
 <p align="center">
-  <img src="https://github.com/Soedirman-Machine-Learning/face-mask-detection/blob/main/logo-md1png.png" width="256" height="256">
+  <img src="https://github.com/Soedirman-Machine-Learning/face-mask-detection/blob/main/logo-md1png.png" width="150" height="150">
   <br>
   <b>Logo Aplikasi Deteksi Masker Muka</b>
 </p>
@@ -39,8 +39,11 @@ Pengujian dilakukan pada dua media yaitu pada infrastruktur <i>Google Colaborato
   <br>
   <b>Simulasi</b>
 </p>
-1. Model <i>TensorFlow Lite</i> dapat diunduh di <i>link</i> berikut : https://github.com/Soedirman-Machine-Learning/face-mask-detection/blob/main/mask_model.tflite
-2. Aplikasi <i>Android</i>-nya dapat diunduh pada <i>link</i> : https://github.com/Soedirman-Machine-Learning/face-mask-detection/blob/main/aplikasi%20android/Face%20Mask%20Detection/apk/Deteksi-Masker-Muka-DL.apk
+1. Model <i>TensorFlow Lite</i> dapat diunduh di <i>link</i> berikut :
+https://github.com/Soedirman-Machine-Learning/face-mask-detection/blob/main/mask_model.tflite
+
+2. Aplikasi <i>Android</i>-nya dapat diunduh pada <i>link</i>:
+https://github.com/Soedirman-Machine-Learning/face-mask-detection/blob/main/aplikasi%20android/Face%20Mask%20Detection/apk/Deteksi-Masker-Muka-DL.apk
 
 ## Penggunaan Aplikasi Android
 ### Menggunakan Kamera
