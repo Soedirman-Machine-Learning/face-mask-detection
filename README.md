@@ -40,6 +40,7 @@ Pengujian dilakukan pada dua media yaitu pada infrastruktur <i>Google Colaborato
   <b>Simulasi</b>
 </p>
 1. Model <i>TensorFlow Lite</i> dapat diunduh di <i>link</i> berikut : https://github.com/Soedirman-Machine-Learning/face-mask-detection/blob/main/mask_model.tflite
+
 2. Aplikasi <i>Android</i>-nya dapat diunduh pada <i>link</i> : https://github.com/Soedirman-Machine-Learning/face-mask-detection/blob/main/aplikasi%20android/Face%20Mask%20Detection/apk/Deteksi-Masker-Muka-DL.apk
 
 ## Penggunaan Aplikasi Android
