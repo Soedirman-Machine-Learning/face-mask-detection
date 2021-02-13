@@ -6,29 +6,35 @@
 </p>
 
 ## Penjelasan Singkat
-Aplikasi ini dibuat untuk melakukan deteksi pemakaian masker muka secara <i>real-time</i> menggunakan metode <i>deep learning</i>. Program dalam proyek ini menggunakan kombinasi antara algoritma CNN (<i>Convolutional Neural Network</i>) dan algoritma deteksi wajah. Program CNN dibuat menggunakan infrastruktur <i>Google Colaboratory</i> dengan bahasa pemrograman <i>Python</i> dan menggunakan <i>Framework Keras</i> dan TensorFlow yang kemudian disimpan dalam bentuk <i>file Jupyter Notebooks</i> “.ipynb”. File dari program tersebut disimpan ke layanan repositori <i>web development</i> pada <i>Platform Github</i>.
-<i>Dataset</i> pelatihan dan validasi disimpan pada <i>Github</i> dengan dua macam kelas (with_mask dan without_mask) yang didapatkan dari Github milik Chandrikadeb7 (https://github.com/chandrikadeb7/Face-Mask-Detection/tree/master/dataset). Jumlah <i>dataset</i> yang digunakan yaitu 3835 dengan rincian 1916 gambar berkelas <i>with_mask</i> dan 1919 <i>without_mask</i>. Sedangkan <i>dataset</i> pengujian yang terdapat pada file "face-detector.zip".
+Aplikasi ini dibuat untuk melakukan deteksi pemakaian masker muka secara <i>real-time</i> menggunakan teknik <i>deep learning</i>. Program dalam proyek ini menggunakan kombinasi antara algoritma CNN (<i>Convolutional Neural Network</i>) dan algoritma deteksi wajah. Program CNN dibuat menggunakan infrastruktur <i>Google Colaboratory</i> dengan bahasa pemrograman <i>Python</i> dan menggunakan <i>Framework Keras</i> dan TensorFlow yang kemudian disimpan dalam bentuk <i>file Jupyter Notebooks</i> “.ipynb”. File dari program tersebut disimpan ke layanan repositori <i>web development</i> pada <i>Platform Github</i>.
+<i>Dataset</i> pelatihan dan validasi disimpan pada <i>Github</i> dengan dua macam kelas (<i>with_mask</i> dan <i>without_mask</i>) yang didapatkan dari Github milik Chandrikadeb7 (https://github.com/chandrikadeb7/Face-Mask-Detection/tree/master/dataset). Jumlah <i>dataset</i> untuk pelatihan yaitu 3835 gambar dengan rincian 1916 gambar berkelas <i>with_mask</i> dan 1919 <i>without_mask</i>. Sedangkan <i>dataset</i> pengujian yang terdapat pada file "face-detector.zip" hasil dari kamera Mi A1 dan website https://unsplash.com/.
 Program klasifikasi dengan algoritma CNN menggunakan dua macam arsitektur, yaitu arsitektur MobileNetV2 dan VGG16Net. Sedangkan untuk algoritma deteksi wajah menggunakan <i>caffe model</i> SSD <i>ResNet10</i> dan <i>library</i> MTCNN.
 
-Setelah dilakukannya validasi, model dari hasil pengujian tersebut dapat disimpan dan dikonversi ke dalam bentuk <i>file Tensorflow Lite</i> ".tflite". File tersebut nantinya digunakan sebagai model yang dapat diimpor ke <i>Android Studio</i> yang tentunya juga mengimpor <i>library tensorflow</i> pada build.gradle di dalam <i>project Android Studio</i>. Kemudian dibuat aplikasi Android untuk deteksi masker muka dengan menggunakan fasilitas kamera pada perangkat <i>Smartphone Android</i>.
+Setelah dilakukan validasi dan evaluasi, model dari hasil pengujian tersebut dapat disimpan dan dikonversi ke dalam bentuk <i>file Tensorflow Lite</i> ".tflite". File tersebut akan digunakan sebagai model untuk aplikasi <i>Android Studio</i> pada bagian folder <i>assets</i>, selain itu mengimpor <i>library tensorflow</i> dan <i>ML Kit Face Recognition</i> pada build.gradle di dalam <i>project Android Studio</i>. Kemudian dibuat aplikasi Android untuk deteksi masker muka dengan menggunakan fasilitas kamera pada perangkat <i>Smartphone Android</i>.
 
-Pengujian dilakukan pada dua media yaitu pada infrastruktur Google Colaboratory dan pada aplikasi Android.
+Pengujian dilakukan pada dua media yaitu pada infrastruktur <i>Google Colaboratory</i> dan pada aplikasi Android.
 
 ## Pelatihan dan Pembuatan Model pada <i>Google Colaboratory</i>
-1. Klik salah satu file Jupyter Notebooks (.ipynb) pada repositori ini
+1. Klik salah satu file antara "Full_Face_Mask_Detection_MobileNetV2.ipynb" atau "Full_Face_Mask_Detection_VGG16Net.ipynb".
 2. Klik ikon "Open with Colab"
 3. Masuk ke <i>Google Colab</i> dengan akun Google Anda
 4. Klik menu "Runtime" kemudian pilih "Run All" atau tekan <b>Ctrl+F9</b> pada keyboard
 5. Tunggu prosesnya hingga selesai (sekitar 5 sampai 10 menit, tergantung koneksi internet dan spesifikasi komputer Anda)
-6. Unduh model (.tflite) yang sudah didapat dari proses pelatihan
+6. Anda dapat juga melakukan <i>run</i> pada setiap <i>cell</i> atau baris yang ada agar dapat lebih memperhatikan prosesnya.
+6. Setelah selesai pelatihan, unduh model (.tflite) yang sudah didapat dari proses pelatihan.
 7. Model tersebut nantinya dapat digunakan pada aplikasi Android.
 
-## <i>Video</i> Hasil Pelatihan dan Pengujian pada <i>Google Colaboratory</i>
-Dapat dilihat pada <i>link</i> berikut : 
+## Pengujian Deteksi menggunakan Model pada <i>Google Colaboratory</i>
+1. Setelah Anda sudah sampai pada bagian mengunduh model (.tflite). Anda dapat mencoba menggunakan model dengan melakukan deteksi.
+2. Ada dua pilihan model deteksi wajah (SSD <i>ResNet10</i> dan <i>library</i> MTCNN).
+3. Run setiap baris yang ada dan ikuti prosesnya, Anda akan mencoba deteksi pada
+   a) Deteksi pada Gambar yang tersedia pada file "face-detector.zip"
+   b) Deteksi secara <i>realtime</i> perframe
+   c) Deteksi secara <i>realtime</i>
+4. Nikmati dan amati proses pengujiannya, selamat mencoba!
 
 ## Aplikasi <i>Android</i>
-Karena ukuran <i>file</i> yang hanya dapat diunggah pada <i>Github</i> maksimal 25 MB maka untuk ukuran <i>file</i> yang lebih besar dari 25 MB disimpan di penyimpanan <i>Google Drive</i>.
-1. Model <i>TensorFlow Lite</i> dapat diunduh di <i>link</i> berikut : 
+1. Model <i>TensorFlow Lite</i> dapat diunduh di <i>link</i> berikut : https://github.com/Soedirman-Machine-Learning/face-mask-detection/blob/main/mask_model.tflite
 2. Aplikasi <i>Android</i>-nya dapat diunduh pada <i>link</i> : https://github.com/Soedirman-Machine-Learning/face-mask-detection/blob/main/aplikasi%20android/Face%20Mask%20Detection/apk/Deteksi-Masker-Muka-DL.apk
 
 ## Penggunaan Aplikasi Android
